@@ -241,7 +241,7 @@ function App() {
         <div className="bg-white/35 backdrop-blur-xl rounded-3xl shadow-2xl p-8 mb-6 border border-white/40">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="text-7xl mb-4" style={{ animation: `bounce 3s infinite` }}>{icon}</div>
+            <div className="text-7xl mb-4 bounce-icon">{icon}</div>
             <h1 className="text-5xl font-bold text-slate-900">{cityName || "Weather PWA"}</h1>
             <p className="text-slate-800 text-sm mt-3 flex items-center justify-center gap-1 font-medium">
               <MapPin size={16} /> {location || "Finding location..."}
