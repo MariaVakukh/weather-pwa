@@ -186,3 +186,44 @@
   animation-duration: var(--anim-duration, 25s);
   animation-delay: var(--anim-delay, 0s);
 }
+
+.bounce-icon {
+  animation: bounceSlow 3s infinite;
+}
+
+@keyframes bounceSlow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ==========================================
+   Weather cards
+   ========================================== */
+.weather-card {
+  @apply bg-gradient-to-br from-white/50 to-white/30 backdrop-blur-lg 
+         rounded-2xl p-6 border border-white/50 flex items-center gap-4;
+}
+
+/* ==========================================
+   Forecast grid
+   ========================================== */
+.forecast-grid {
+  @apply mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3;
+}
+
+.forecast-card {
+  @apply bg-gradient-to-br from-white/50 to-white/30 backdrop-blur-lg 
+         rounded-2xl p-4 border border-white/50 text-center;
+}
+
+/* ==========================================
+   Install PWA Button
+   ========================================== */
+.install-button {
+  @apply w-full bg-gradient-to-r from-white/60 to-white/40 
+         text-slate-900 px-8 py-4 rounded-2xl font-bold shadow-xl 
+         hover:shadow-2xl transition-all duration-300 
+         flex items-center justify-center gap-3 
+         hover:scale-105 border border-white/50 
+         hover:from-white/80 hover:to-white/60;
+}
